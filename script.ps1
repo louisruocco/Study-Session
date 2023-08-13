@@ -1,5 +1,5 @@
 function studysession {  
-    $minute = 51
+    $minute = 25
     while(($minute = $minute - 1) -ge 0){
         write-host "Time Remaining: $minute Minutes"
         start-sleep 60
@@ -9,7 +9,7 @@ function studysession {
     write-host "Starting Break timer..."
     start-sleep 2
 
-    $break = 10
+    $break = 5
     while (($break = $break - 1) -ge 0){
         write-host "Break Time Remaining: $break Minutes"
         start-sleep 60
